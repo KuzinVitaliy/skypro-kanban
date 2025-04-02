@@ -55,7 +55,7 @@ export let cards = [
     taskDate: "01.02.2025",
     taskStatus: 0,
   },
-  
+   
   {
     taskId: 9,
     taskType: 0,
