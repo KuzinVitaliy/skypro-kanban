@@ -1,0 +1,16 @@
+.column{
+   display: flex;
+   flex-direction: column ;
+}
+.columnHeader {
+    color: rgb(148, 166, 190);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

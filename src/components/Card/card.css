@@ -1,0 +1,71 @@
+.taskCard {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 200px;
+    height: 130px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.taskCard_header {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.taskCard_type {
+    min-width: 71px;
+    height: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 14px 4px 14px;
+}
+
+.taskCard_type__design {
+    background: rgb(255, 228, 194);
+    color: rgb(255, 109, 0)
+}
+
+.taskCard_type__research {
+    background: rgb(180, 253, 209);
+    color: rgb(6, 177, 110);
+}
+
+.taskCard_type__copywriting {
+    background: rgb(233, 212, 255);
+    color: rgb(154, 72, 241);
+}
+
+.taskCard_title {
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.taskCard_date {
+    background-image: url("./calendar.svg");
+    background-repeat: no-repeat;
+    background-size: 10px, 10px;
+    padding-left: 12px;
+    color: rgb(148, 166, 190);
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+}
+
+.taskCard_action {
+    font-size: 16px;
+    margin: 10px;
+    padding: 0px;
+}
