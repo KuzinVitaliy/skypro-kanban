@@ -1,6 +1,6 @@
 import "./card.css";
 import "./calendar.svg";
-export function Card(cardInfo) {
+export function Card({cardInfo}) {
   let taskTypeStyle = "";
   switch (cardInfo.taskType) {
     case 0:

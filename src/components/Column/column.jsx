@@ -1,13 +1,12 @@
-import "./column.css"
-import { Card } from "../Card/card.jsx";
-export function column(cards, title) {
+import "./column.css";
+import { Card } from "../Card/Card.jsx";
+export function Column({cardList, title}) {
   return (
     <div className="column">
       <div className="columnHeader">{title}</div>
-    {cards.map((item, index) => (
-               <>{Card(item)}</>
-            ))}
-      
+      {cardList.map((item, index) => (
+        <Card cardInfo={item} />
+      ))}
     </div>
   );
 }

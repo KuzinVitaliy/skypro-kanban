@@ -1,39 +1,39 @@
 import "./main.css";
-import { column } from "../Column/column.jsx";
+import { Column } from "../Column/Column.jsx";
 import { cards } from "../../data.js";
 
 export function main() {
   return (
     <div className="main">
       <div>
-        {column(
-          cards.filter((card) => card.taskStatus === 0),
-          "Без статуса"
-        )}
+        <Column
+          cardList={cards.filter((card) => card.taskStatus === 0)}
+          title="Без статуса"
+        />
       </div>
       <div>
-        {column(
-          cards.filter((card) => card.taskStatus === 1),
-          "Нужно сделать"
-        )}
+        <Column
+          cardList={cards.filter((card) => card.taskStatus === 1)}
+          title="Нужно сделать"
+        />
       </div>
       <div>
-        {column(
-          cards.filter((card) => card.taskStatus === 2),
-          "В работе"
-        )}
+        <Column
+          cardList={cards.filter((card) => card.taskStatus === 2)}
+          title="В работе"
+        />
       </div>
       <div>
-        {column(
-          cards.filter((card) => card.taskStatus === 3),
-          "Тестирование"
-        )}
+        <Column
+          cardList={cards.filter((card) => card.taskStatus === 3)}
+          title="Тестирование"
+        />
       </div>
       <div>
-        {column(
-          cards.filter((card) => card.taskStatus === 4),
-          "Готово"
-        )}
+        <Column
+          cardList={cards.filter((card) => card.taskStatus === 4)}
+          title="Готово"
+        />
       </div>
     </div>
   );
