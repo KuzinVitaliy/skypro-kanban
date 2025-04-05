@@ -1,10 +1,8 @@
 .main {
     display: flex;
-    background: rgb(229, 229, 229);
+    justify-content: center;
+   /* background: rgb(229, 229, 229);*/
     width: auto;
     height: auto;
-    column-gap: 18px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    column-gap: 19px;
 }
