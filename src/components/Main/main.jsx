@@ -2,7 +2,7 @@ import "./main.css";
 import { Column } from "../Column/Column.jsx";
 import { cards } from "../../data.js";
 
-export function main() {
+export function Main() {
   return (
     <div className="main">
       <div>

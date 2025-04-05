@@ -12,9 +12,12 @@ function App() {
 
   return (
     <div classname="content">
-
-      <div>{header()}</div>
-      <div>{main()}</div>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Main />
+      </div>
     </div>
   );
 }

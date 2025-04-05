@@ -1,6 +1,6 @@
 import "./header.css";
 import "./logo.svg";
-export function header() {
+export function Header() {
   return (
     <div className="header">
       <div className="logo"></div>
