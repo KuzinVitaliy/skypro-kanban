@@ -7,6 +7,7 @@ import { Card } from "./components/Card/card.jsx";
 import { Header } from "./components/Header/header.jsx";
 import { Main } from "./components/Main/main.jsx";
 import { PopNewCard } from "./components/Popups/PopNewCard/PopNewCard.jsx";
+import { Calendar } from "./components/Calendar/Calendar.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,7 +22,6 @@ function App() {
           <Main />
         </div>
       </div>
-      <PopNewCard />
     </>
   );
 }
