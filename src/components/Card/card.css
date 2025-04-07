@@ -18,7 +18,6 @@
 }
 
 .taskCard_type {
-    min-width: 54px;
     height: 10px;
     border-radius: 18px;
     color: rgb(6, 177, 110);
@@ -39,19 +38,16 @@
 .taskCard_type__design {
     background: rgb(255, 228, 194);
     color: rgb(255, 109, 0);
-    width: 82px;
 }
 
 .taskCard_type__research {
     background: rgb(180, 253, 209);
     color: rgb(6, 177, 110);
-    width: 71px;
 }
 
 .taskCard_type__copywriting {
     background: rgb(233, 212, 255);
     color: rgb(154, 72, 241);
-    width: 82px;
 }
 
 .taskCard_title {
