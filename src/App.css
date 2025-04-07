@@ -9,9 +9,11 @@
 }
 
 .content {
+  display: flex;
   width: stretch;
   height: stretch;
   background: rgb(234, 238, 246);
+  justify-content: center;
 }
 
 .logo {

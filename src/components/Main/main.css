@@ -1,8 +1,8 @@
 .main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
    /* background: rgb(229, 229, 229);*/
-    width: auto;
+    width: 1200px;
     height: auto;
     column-gap: 19px;
 }

@@ -18,7 +18,7 @@ export function Card({cardInfo}) {
     <div data-id={cardInfo.Id} className="taskCard">
       <div className="taskCard_header">
         <div className={taskTypeStyle}>{taskTypeName(cardInfo.taskType)}</div>
-        <div className="taskCard_action">...</div>
+        <div className="taskCard_action"></div>
       </div>
       <div className="taskCard_title">{cardInfo.taskName}</div>
       <div>

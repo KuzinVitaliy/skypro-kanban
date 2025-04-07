@@ -1,10 +1,10 @@
 .taskCard {
     background: rgb(255, 255, 255);
     border-radius: 10px;
-    width: 220px;
-    height: 130px;
-    padding: 13px;
-    padding-bottom: 19px;
+    width: 194px;
+    height: 98px;
+    padding: 13px 13px 19px 13px;
+
     margin-bottom: 10px;
 }
 
@@ -14,11 +14,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .taskCard_type {
-    min-width: 71px;
-    height: 20px;
+    min-width: 54px;
+    height: 10px;
     border-radius: 18px;
     color: rgb(6, 177, 110);
     font-family: Roboto;
@@ -61,7 +62,7 @@
     line-height: 16px;
     letter-spacing: 0px;
     text-align: left;
-    min-height: 70px;
+    min-height: 62px;
 }
 
 .taskCard_date {
@@ -79,6 +80,11 @@
 
 .taskCard_action {
     font-size: 16px;
-    margin: 10px;
     padding: 0px;
+    background-image: url(./ellipsis-horizontal-sharp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+
 }
