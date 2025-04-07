@@ -12,7 +12,7 @@
 .header_block {
     display: flex;
     flex-direction: row;
-    width: 1200px;
+    width: 1175px;
     justify-content: space-between;
 }
 
