@@ -1,16 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
-import { cards } from "./data.js";
-import { Card } from "./components/Card/card.jsx";
 import { Header } from "./components/Header/header.jsx";
-import { Main } from "./components/Main/main.jsx";
+import { Main } from "./components/Main/Main.jsx";
 import { PopNewCard } from "./components/Popups/PopNewCard/PopNewCard.jsx";
 import { Calendar } from "./components/Calendar/Calendar.jsx";
+import { PopUser } from "./components/Popups/PopUser/PopUser.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [loading, setLoading] = useState(true);
+ 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -19,7 +22,7 @@ function App() {
       </div>
       <div className="content">
         <div>
-          <Main />
+          <Main loading={loading} />
         </div>
       </div>
     </>

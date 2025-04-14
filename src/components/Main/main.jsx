@@ -1,9 +1,14 @@
 import "./main.css";
+import "./loading.gif";
 import { Column } from "../Column/Column.jsx";
 import { cards } from "../../data.js";
 
-export function Main() {
-  return (
+export function Main({loading}) {
+  return loading ? (
+    <div className="loading">
+      <div className="loadingText">Загрузка...</div>
+    </div>
+  ) : (
     <div className="main">
       <div>
         <Column
