@@ -1,13 +1,19 @@
 #root {
- /* max-width: 1280px;*/
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px;
+  margin: 0 auto;*/
+  display: flex;
   text-align: top;
+  background: rgb(234, 238, 246);
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .content {
+  display: flex;
   width: stretch;
   height: stretch;
+  background: rgb(234, 238, 246);
+  justify-content: center;
 }
 
 .logo {

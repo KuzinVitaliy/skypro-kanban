@@ -1,0 +1,29 @@
+.newCard {
+    /* Frame 1511838654 */
+    width: 630px;
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20;
+    padding: 40px 30px 48px 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(73, 101, 194);
+}
+
+.newCard_header {
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.newCard_inputName{
+    height: 49px;
+    padding: 14px;
+}
