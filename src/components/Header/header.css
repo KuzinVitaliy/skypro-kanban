@@ -24,9 +24,9 @@
     height: auto;
 }
 
-.rightPanel {
+.signUpPanel {
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
 .createTask {
@@ -66,4 +66,14 @@
     background-position: center;
     width: 10px;
     height: 70px;
+}
+
+.rightPanel {
+    display: flex;
+    align-items: center;
+}
+
+.rightPanel2 {
+    display: flex;
+    flex-direction: column;
 }

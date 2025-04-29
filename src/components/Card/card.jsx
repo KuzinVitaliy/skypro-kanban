@@ -1,6 +1,6 @@
 import "./card.css";
 import "./calendar.svg";
-export function Card({cardInfo}) {
+export function Card({ cardInfo }) {
   let taskTypeStyle = "";
   switch (cardInfo.taskType) {
     case 0:
@@ -13,9 +13,9 @@ export function Card({cardInfo}) {
       taskTypeStyle = "taskCard_type taskCard_type__copywriting";
       break;
   }
-
+  //console.log(cardInfo.taskId);
   return (
-    <div data-id={cardInfo.Id} key={cardInfo.Id} className="taskCard">
+    <div data-id={cardInfo.taskId} key={cardInfo.taskId} className="taskCard">
       <div className="taskCard_header">
         <div className={taskTypeStyle}>{taskTypeName(cardInfo.taskType)}</div>
         <div className="taskCard_action"></div>

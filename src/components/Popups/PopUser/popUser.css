@@ -2,6 +2,9 @@
     display: none;
     width: auto;
     height: auto;
+    position: absolute;
+    top: 58px;
+    left: 76vw;
 }
 
 .userCard_content {
@@ -57,7 +60,7 @@
 }
 
 .userCard_exit {
-   
+
     margin-top: 20px;
     width: 72px;
     height: 30px;
