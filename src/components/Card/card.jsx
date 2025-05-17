@@ -1,28 +1,27 @@
-import "./card.css";
+import {
+  STaskCard_action,
+  STaskCard_date,
+  STaskCard_header,
+  STaskCard_title,
+  STaskCard_type,
+} from "./scard.jsx";
+import { TaskStatus, TaskType } from "../Commons.ts";
+
 import "./calendar.svg";
 export function Card({ cardInfo }) {
-  let taskTypeStyle = "";
-  switch (cardInfo.taskType) {
-    case 0:
-      taskTypeStyle = "taskCard_type taskCard_type__design";
-      break;
-    case 1:
-      taskTypeStyle = "taskCard_type taskCard_type__research";
-      break;
-    case 2:
-      taskTypeStyle = "taskCard_type taskCard_type__copywriting";
-      break;
-  }
+  let tt = cardInfo.taskType;
   //console.log(cardInfo.taskId);
   return (
     <div data-id={cardInfo.taskId} key={cardInfo.taskId} className="taskCard">
-      <div className="taskCard_header">
-        <div className={taskTypeStyle}>{taskTypeName(cardInfo.taskType)}</div>
-        <div className="taskCard_action"></div>
-      </div>
-      <div className="taskCard_title">{cardInfo.taskName}</div>
+      <STaskCard_header>
+        <STaskCard_type $type={tt}>
+          {taskTypeName(cardInfo.taskType)}
+        </STaskCard_type>
+        <STaskCard_action></STaskCard_action>
+      </STaskCard_header>
+      <STaskCard_title>{cardInfo.taskName}</STaskCard_title>
       <div>
-        <div className="taskCard_date">{cardInfo.taskDate}</div>
+        <STaskCard_date> {cardInfo.taskDate} </STaskCard_date>
       </div>
     </div>
   );
@@ -30,11 +29,11 @@ export function Card({ cardInfo }) {
 
 function taskTypeName(taskType) {
   switch (taskType) {
-    case 0:
+    case TaskType.Design:
       return "Web Design";
-    case 1:
+    case TaskType.Research:
       return "Research";
-    case 2:
+    case TaskType.Copywriting:
       return "Copywriting";
   }
 }

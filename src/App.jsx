@@ -8,7 +8,7 @@ import { PopUser } from "./components/Popups/PopUser/PopUser.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
- 
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

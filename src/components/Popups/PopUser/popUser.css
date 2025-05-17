@@ -8,10 +8,8 @@
 }
 
 .userCard_content {
-
     width: 213px;
     height: 170px;
-
     display: flex;
     flex-direction: column;
     border-radius: 20px;
